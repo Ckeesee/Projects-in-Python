@@ -18,7 +18,7 @@ class PickClass(Player):
             characterClass = x
         else:
             pickClass = input("Please pick a Class from the list:")
-    if characterClass == Fighter or Rogue:
+    if characterClass == "Fighter" or characterClass == "Rogue":
         spells = 0
     else:
         spells = 3
