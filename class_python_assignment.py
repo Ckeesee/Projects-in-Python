@@ -1,9 +1,13 @@
-DefaultClasses = [Bard, Paladin, Fighter, Rogue, Wizard, Cleric, Warlock]
-DefaultWeapons = [Sword, Shield]
+#Initalizing the base classes for D&D
+DefaultClasses = ["Bard", "Paladin", "Fighter", "Rogue", "Wizard", "Cleric", "Warlock"]
+#Creatiing a player for Dungeons and Dragons
+#Making a player and character name
 class Player:
     name = 'No Name Provided'
     characterName = ''
 
+
+#Picking the Player's Character's class from a list and seeing if they get spells
 class PickClass(Player):
     print("Pick  a class!\n")
     for x in DefaultClasses:
@@ -14,11 +18,12 @@ class PickClass(Player):
             characterClass = x
         else:
             pickClass = input("Please pick a Class from the list:")
-    if characterClass = Fighter or Rogue:
+    if characterClass == Fighter or Rogue:
         spells = 0
     else:
         spells = 3
 
+#Player gets to choose what equipment that their character gets to use
 class PickEquip(Player):
     characterWeapon = input("Please input your weapon of choice for your character:")
     characterArmor = input("Please input your armor of choice for your character:")
