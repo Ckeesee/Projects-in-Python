@@ -9,11 +9,10 @@ from shutil import *
 import os.path
 import tempfile
 import datetime
-#from datetime import *
-import dateutil.relativedelta
+
 
 fileT_human = datetime.datetime.now()#We are converting it to human readeable
-print(fileT_human)
+
 
 #creats the window
 class ParentWindow(Frame):
@@ -62,20 +61,7 @@ class ParentWindow(Frame):
         files = os.listdir(source)
 
         for i in files:
-            path = os.path.join(source, i)
-            print(path)
-            mtime = os.stat(path)[8]
-            print(mtime)
-            mtime_human = datetime.datetime.fromtimestamp(mtime)
-            print(mtime_human)
-
-            diff = dateutil.relativedelta.relativedelta (fileT_human, mtime_human)
-            print(diff)
-
-            days = diff.days
-            print(days)
-            if days < 1:
-                shutil.move(source+i, destination)
+            shutil.move(source+i, destination)
 
     
         self.lblText = Label(self.master, text='File transfer Complete!', font=('Helvetica',16), fg='black', bg='lightgray')
