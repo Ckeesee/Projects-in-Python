@@ -1,6 +1,6 @@
 # Projects in Python
  
-Projects
+<strong>Projects</strong>
 
   [Phonebook](https://github.com/Ckeesee/Projects-in-Python/blob/main/project_phonebook/phonebook_main.py)<br>
   [Check Files GUI](https://github.com/Ckeesee/Projects-in-Python/blob/main/File%20Transfer%20Assignment%202.py)
